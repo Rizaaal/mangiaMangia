@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# App del ristorante mangiaMangia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Gruppo di riferimento:
+- Gabriele Di Grazia
+- Rita Ciaramitano
+- Yuri Fiorito
 
-## Available Scripts
+> Questo progetto è stato creato utilizzando [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+## Getting started
 
-### `npm start`
+In una directory, clona il progetto:\
+`git clone https://github.com/Rizaaal/food-delivery/`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Per visualizzare il progetto in dev mode, eseguire:\
+`npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Naviga verso [http://localhost:3000](http://localhost:3000) per vederlo nel tuo browser.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La pagina si ricaricherà ad ogni update.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+crea la build del progetto nel `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Vedere la documentazione sul [deployment](https://facebook.github.io/create-react-app/docs/deployment) di un progetto.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Descrizione
 
-### `npm run eject`
+App di creata in react e bootstrap.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+App del ristorante "mangia-mangia" fusion con hamburger, pizze sushi e anche primi piatti. Il ristorante ha una sua piattaforma per la gestione degli ordini da casa online attraverso il suo sito web. Dal suo sito web e' possibile anche prenotare un tavolo e gestire le prenotazioni.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Il sito ha la seguente struttura:
+- La home presenta una hero screen ed informazioni sul ristorante, con le cucine disponibili. dentro ogni cucina si puo navigare verso il menu dove vengono visualizzati i piatti di questa cucina.
+- L'utente puo' navigare dentro un menu dove vede la lista dei piatti disponibili. Abbiamo anche una tab dove possiamo filtrare per tipo di cucina. Ogni piatto puo' essere aggiunto al carrello delle ordinazioni, anche più volte. Si puo' fare un ordinazione alla volta.
+- Puoi fare un ordine, aggiungendo i piatti al carrello. dalla pagina carrello puoi confermare la tua ordinazione. quando l'ordinazione viene eseguita, l'utente viene portato verso una pagina di conferma. dalla pagina di conferma l'utente puo navigare alla home.
+- Puoi fare una prenotazione al ristorante. quando prenoti, la tua prenotazione si vede in una pagina le tue prenotazioni. una volta eseguita la prenotazione, all'utente viene mostrata una pagina di conferma della prenotazione. Dentro questa pagina si vedono le tue prenotazioni con nome, orario e giorno. la prenotazione si può disdire dalla pagina delle prenotazioni.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Organizzazione tasks
+Le task vengono organizzate tramite **github projects**: projects è un tool di github che ti permette di gestire ogni aspetto della repo: task, calendario etc. Utilizziamo quella per organizzare il lavoro.
+Le task (le cose da fare individualmente) devono essere create li. Quella deve essere la fonte di verità per quello che deve essere fatto in un dato momento!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[documentazione projects github](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
-## Learn More
+## Tasks (temporaneo)
+1. Aggiungere altri piatti
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+mockup
+1. definire struttura sito con pages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+tecnico
+1. Fare linter con husky
 
-### Code Splitting
+## Commit standard
+Questo progetto segue il conventional commit. Le opzioni disponibili sono le seguenti:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- feat
+- docs
+- chore
+- fix
+- refactor
 
-### Analyzing the Bundle Size
+[https://www.conventionalcommits.org/en/v1.0.0/](documentazione conventional commit)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+In generale la sintassi è la seguente:\
+`[tipo]: {messaggio di commit}`
 
-### Making a Progressive Web App
+ad esempio: \
+`feat: added navbar to file.html`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I commit sono in lingua inglese.
