@@ -5,54 +5,50 @@ Gruppo di riferimento:
 - Rita Ciaramitano
 - Yuri Fiorito
 
-> Questo progetto è stato creato utilizzando [Create React App](https://github.com/facebook/create-react-app).
+> Questo progetto è stato creato utilizzando [Create React App](https://github.com/facebook/create-react-app) e [Bootstrap](https://getbootstrap.com/).
 
-## Getting started
+## Cosa fare all'inizio
 
 In una directory, clona il progetto:\
-`git clone https://github.com/Rizaaal/food-delivery/`
+`https://github.com/Rizaaal/mangiaMangia`
+
+Una volta aperto il progetto, scarica le dipendenze:\
+`npm i`
 
 Per visualizzare il progetto in dev mode, eseguire:\
-`npm start`
+`npm run start`
 
 Naviga verso [http://localhost:3000](http://localhost:3000) per vederlo nel tuo browser.
 
-La pagina si ricaricherà ad ogni update.
-
-### `npm run build`
-
-crea la build del progetto nel `build` folder.
-
-> Vedere la documentazione sul [deployment](https://facebook.github.io/create-react-app/docs/deployment) di un progetto.
+La pagina si ricaricherà ogni qual volta il codice viene modificato e salvato.
 
 ## Descrizione
 
-App di creata in react e bootstrap.
-
 App del ristorante "mangia-mangia" fusion con hamburger, pizze sushi e anche primi piatti. Il ristorante ha una sua piattaforma per la gestione degli ordini da casa online attraverso il suo sito web. Dal suo sito web e' possibile anche prenotare un tavolo e gestire le prenotazioni.
 
-Il sito ha la seguente struttura:
-- La home presenta una hero screen ed informazioni sul ristorante, con le cucine disponibili. dentro ogni cucina si puo navigare verso il menu dove vengono visualizzati i piatti di questa cucina.
+### Struttura (da completare)
+
+- pagina home
+  - La home presenta una hero screen ed informazioni sul ristorante, con le cucine disponibili. dentro ogni cucina si puo navigare verso il menu dove vengono visualizzati i piatti di questa cucina.
 - L'utente puo' navigare dentro un menu dove vede la lista dei piatti disponibili. Abbiamo anche una tab dove possiamo filtrare per tipo di cucina. Ogni piatto puo' essere aggiunto al carrello delle ordinazioni, anche più volte. Si puo' fare un ordinazione alla volta.
 - Puoi fare un ordine, aggiungendo i piatti al carrello. dalla pagina carrello puoi confermare la tua ordinazione. quando l'ordinazione viene eseguita, l'utente viene portato verso una pagina di conferma. dalla pagina di conferma l'utente puo navigare alla home.
 - Puoi fare una prenotazione al ristorante. quando prenoti, la tua prenotazione si vede in una pagina le tue prenotazioni. una volta eseguita la prenotazione, all'utente viene mostrata una pagina di conferma della prenotazione. Dentro questa pagina si vedono le tue prenotazioni con nome, orario e giorno. la prenotazione si può disdire dalla pagina delle prenotazioni.
 
 ## Organizzazione tasks
-Le task vengono organizzate tramite **github projects**: projects è un tool di github che ti permette di gestire ogni aspetto della repo: task, calendario etc. Utilizziamo quella per organizzare il lavoro.
-Le task (le cose da fare individualmente) devono essere create li. Quella deve essere la fonte di verità per quello che deve essere fatto in un dato momento!
-
-[documentazione projects github](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-
-## Tasks (temporaneo)
-1. Aggiungere altri piatti
-
-mockup
-1. definire struttura sito con pages
-
-tecnico
-1. Fare linter con husky
+Le task vengono organizzate tramite le **issues**: le issues servono per tracciare le richieste di cose da fare. il procedimento è il seguente:
+1. si decide per un cambiamento. apro una issue che descrive il cambiamento
+2. applico una label coerente
+3. dopo che la pull request è stata accettata, chiudere la issue (tasto "close issue" in fondo)
 
 ## Commit standard
+
+### Processo di push di una modifica
+NON è possibile pushare direttamente nel branch `main`. Per pushare una modifica:
+1. creare un nuovo branch
+2. committare la modifica nel branch
+3. pushare con il comando `git push origin [nome branch]`
+4. eseguire una pull request da github.
+
 Questo progetto segue il conventional commit. Le opzioni disponibili sono le seguenti:
 
 - feat
@@ -61,7 +57,7 @@ Questo progetto segue il conventional commit. Le opzioni disponibili sono le seg
 - fix
 - refactor
 
-[https://www.conventionalcommits.org/en/v1.0.0/](documentazione conventional commit)
+> consultare la [documentazione conventional commit](https://www.conventionalcommits.org/en/v1.0.0/)
 
 In generale la sintassi è la seguente:\
 `[tipo]: {messaggio di commit}`
@@ -70,3 +66,10 @@ ad esempio: \
 `feat: added navbar to file.html`
 
 I commit sono in lingua inglese.
+
+### Build
+
+per creare la build del progetto nel `build` folder:\
+`npm run build`
+
+> Vedere la documentazione sul [deployment](https://facebook.github.io/create-react-app/docs/deployment) di un progetto.
