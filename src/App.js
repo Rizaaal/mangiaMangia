@@ -1,190 +1,190 @@
-import React, { Component } from "react";
-import Navbar from "./Components/Navbar";
-import Card from "./Components/Card";
-import pippo from "./cibo/pippo.jpg";
-import franco from "./cibo/franco.jpg";
-import paoli from "./cibo/paoli.jpg";
-import gino from "./cibo/gino.jpg";
-import hamburger0 from "./cibo/hamburger0.jpg";
-import hamburger1 from "./cibo/hamburger1.jpg";
-import hamburger2 from "./cibo/hamburger2.jpg";
-import hamburger3 from "./cibo/hamburger3.jpeg";
-import sanDaniele from "./cibo/sanDaniele.jpg";
-import diavola from "./cibo/diavola.jpg";
-import margherita from "./cibo/margherita.jpg";
-import vegana from "./cibo/vegana.jpg";
-import pomodoro from "./cibo/pomodoro.jpg";
-import pesto from "./cibo/pesto.jpg";
-import carbonara from "./cibo/carbonara.jpg";
-import peperoni from "./cibo/peperoni.jpg";
-import cocaCola from "./cibo/cocaCola.jpg";
-import fanta from "./cibo/fanta.jpg";
-import sprite from "./cibo/sprite.jpg";
-import ceres from "./cibo/ceres.jpg";
+import React, { Component } from 'react';
+import Navbar from './Components/Navbar';
+import Card from './Components/Card';
+import pippo from './cibo/pippo.jpg';
+import franco from './cibo/franco.jpg';
+import paoli from './cibo/paoli.jpg';
+import gino from './cibo/gino.jpg';
+import hamburger0 from './cibo/hamburger0.jpg';
+import hamburger1 from './cibo/hamburger1.jpg';
+import hamburger2 from './cibo/hamburger2.jpg';
+import hamburger3 from './cibo/hamburger3.jpeg';
+import sanDaniele from './cibo/sanDaniele.jpg';
+import diavola from './cibo/diavola.jpg';
+import margherita from './cibo/margherita.jpg';
+import vegana from './cibo/vegana.jpg';
+import pomodoro from './cibo/pomodoro.jpg';
+import pesto from './cibo/pesto.jpg';
+import carbonara from './cibo/carbonara.jpg';
+import peperoni from './cibo/peperoni.jpg';
+import cocaCola from './cibo/cocaCola.jpg';
+import fanta from './cibo/fanta.jpg';
+import sprite from './cibo/sprite.jpg';
+import ceres from './cibo/ceres.jpg';
 
 class App extends Component {
   state = {
     categories: [
       {
         id: 0,
-        name: "SUSHI",
+        name: 'SUSHI',
         products: [
           {
             id: 0,
-            nome: "Pippo Franco",
+            nome: 'Pippo Franco',
             prezzo: 1.99,
             immagine: pippo,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 1,
-            nome: "Franco Franchi",
+            nome: 'Franco Franchi',
             prezzo: 2.99,
             immagine: franco,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 2,
-            nome: "Gino Paoli",
+            nome: 'Gino Paoli',
             prezzo: 3.99,
             immagine: paoli,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 3,
-            nome: "Pedro Pascal",
+            nome: 'Pedro Pascal',
             prezzo: 4.99,
             immagine: gino,
-            quantità: 0,
-          },
-        ],
+            quantità: 0
+          }
+        ]
       },
       {
         id: 1,
-        name: "HAMBURGER",
+        name: 'HAMBURGER',
         products: [
           {
             id: 0,
-            nome: "Happy Belly Burger",
+            nome: 'Happy Belly Burger',
             prezzo: 5.99,
             immagine: hamburger0,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 1,
-            nome: "Smiley Patty Burger",
+            nome: 'Smiley Patty Burger',
             prezzo: 7.99,
             immagine: hamburger1,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 2,
-            nome: "Jolly Juicy Burger",
+            nome: 'Jolly Juicy Burger',
             prezzo: 9.99,
             immagine: hamburger2,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 3,
-            nome: "Chuckle Cheeseburger",
+            nome: 'Chuckle Cheeseburger',
             prezzo: 11.99,
             immagine: hamburger3,
-            quantità: 0,
-          },
-        ],
+            quantità: 0
+          }
+        ]
       },
       {
         id: 2,
-        name: "PIZZA",
+        name: 'PIZZA',
         products: [
           {
             id: 0,
-            nome: "Daniel San",
+            nome: 'Daniel San',
             prezzo: 10.99,
             immagine: sanDaniele,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 1,
-            nome: "Diavola",
+            nome: 'Diavola',
             prezzo: 8.99,
             immagine: diavola,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 2,
-            nome: "Margherita",
+            nome: 'Margherita',
             prezzo: 5.99,
             immagine: margherita,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 3,
-            nome: "Vegana",
+            nome: 'Vegana',
             prezzo: 4.99,
             immagine: vegana,
-            quantità: 0,
-          },
-        ],
+            quantità: 0
+          }
+        ]
       },
       {
         id: 3,
-        name: "PASTA",
+        name: 'PASTA',
         products: [
           {
             id: 0,
-            nome: "Spaghetti al pomodoro",
+            nome: 'Spaghetti al pomodoro',
             prezzo: 10.99,
             immagine: pomodoro,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 1,
-            nome: "Spaghetti al pesto di pistacchi",
+            nome: 'Spaghetti al pesto di pistacchi',
             prezzo: 12.99,
             immagine: pesto,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 2,
-            nome: "Spaghetti alla carbonara",
+            nome: 'Spaghetti alla carbonara',
             prezzo: 11.99,
             immagine: carbonara,
-            quantità: 0,
+            quantità: 0
           },
           {
             id: 3,
-            nome: "Spaghetti con crema di peperoni",
+            nome: 'Spaghetti con crema di peperoni',
             prezzo: 12.99,
             immagine: peperoni,
-            quantità: 0,
-          },
-        ],
+            quantità: 0
+          }
+        ]
       },
       {
         id: 4,
-        name: "BIBITE",
+        name: 'BIBITE',
         products: [
           {
             id: 0,
-            nome: "CocaCola",
+            nome: 'CocaCola',
             prezzo: 2.99,
             immagine: cocaCola,
-            quantità: 0,
+            quantità: 0
           },
-          { id: 1, nome: "Fanta", prezzo: 3.99, immagine: fanta, quantità: 0 },
+          { id: 1, nome: 'Fanta', prezzo: 3.99, immagine: fanta, quantità: 0 },
           {
             id: 2,
-            nome: "Sprite",
+            nome: 'Sprite',
             prezzo: 2.99,
             immagine: sprite,
-            quantità: 0,
+            quantità: 0
           },
-          { id: 3, nome: "Ceres", prezzo: 3.99, immagine: ceres, quantità: 0 },
-        ],
-      },
+          { id: 3, nome: 'Ceres', prezzo: 3.99, immagine: ceres, quantità: 0 }
+        ]
+      }
     ],
-    selectedCategory: null,
+    selectedCategory: null
   };
 
   handleCategoryClick = (categoryId) => {
@@ -195,7 +195,7 @@ class App extends Component {
     const updatedCategories = this.state.categories.map((category) => {
       if (category.id === categoryId) {
         category.products = category.products.filter(
-          (product) => product.id !== cardId,
+          (product) => product.id !== cardId
         );
       }
       return category;
@@ -260,7 +260,7 @@ class App extends Component {
               .filter(
                 (category) =>
                   this.state.selectedCategory === null ||
-                  category.id === this.state.selectedCategory,
+                  category.id === this.state.selectedCategory
               )
               .map((category) => (
                 <div key={category.id}>

@@ -1,10 +1,10 @@
-import { Component } from "react";
+import { Component } from 'react';
 
 class Card extends Component {
   render() {
     return (
       <div className="col">
-        <div className="card" style={{ width: "18rem", textAlign: "center" }}>
+        <div className="card" style={{ width: '18rem', textAlign: 'center' }}>
           <button
             onClick={() => this.props.onIncrement(this.props.card)}
             className="btn btn-primary"
