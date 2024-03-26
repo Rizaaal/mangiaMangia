@@ -23,6 +23,14 @@ Naviga verso [http://localhost:3000](http://localhost:3000) per vederlo nel tuo 
 
 La pagina si ricaricherà ogni qual volta il codice viene modificato e salvato.
 
+## configurazione di un server mySql
+
+1. scarica mySql workbench andando alla [pagina download](https://www.mysql.com/products/workbench/)
+2. configura una nuova connessione ([pagina tutorial](https://dev.mysql.com/doc/workbench/en/wb-getting-started-tutorial-create-connection.html))
+3. scarica XAMPP ([pagina download](https://www.apachefriends.org/it/index.html))
+4. fai partire il server mySQL dalla dashboard di XAMPP
+5. entra dentro mySql workbench e esegui la query contenuta dentro `databse.sql` contenuto all'interno della repo
+
 ## Descrizione
 
 App del ristorante "mangia-mangia" fusion con hamburger, pizze sushi e anche primi piatti. Il ristorante ha una sua piattaforma per la gestione degli ordini da casa online attraverso il suo sito web. Dal suo sito web e' possibile anche prenotare un tavolo e gestire le prenotazioni.
