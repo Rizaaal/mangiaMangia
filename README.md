@@ -31,6 +31,11 @@ La pagina si ricaricherà ogni qual volta il codice viene modificato e salvato.
 4. fai partire il server mySQL dalla dashboard di XAMPP
 5. entra dentro mySql workbench e esegui la query contenuta dentro `databse.sql` contenuto all'interno della repo
 
+> altre risorse:
+> [usare mySql in React](https://dev.to/nasreenkhalid/simple-react-js-and-mysql-integration-crud-app-backend-5aom)
+> [tutorial SQL](https://www.w3schools.com/sql/default.asp)
+> [sito per testare le query SQL](https://extendsclass.com/mysql-online.html)
+
 ## Descrizione
 
 App del ristorante "mangia-mangia" fusion con hamburger, pizze sushi e anche primi piatti. Il ristorante ha una sua piattaforma per la gestione degli ordini da casa online attraverso il suo sito web. Dal suo sito web e' possibile anche prenotare un tavolo e gestire le prenotazioni.
