@@ -6,6 +6,7 @@ Gruppo di riferimento:
 - Yuri Fiorito
 
 > Questo progetto è stato creato utilizzando [Create React App](https://github.com/facebook/create-react-app) e [Bootstrap](https://getbootstrap.com/).
+> il progetto utilizza un database mySQL + ExpressJS
 
 ## Cosa fare all'inizio
 
@@ -29,10 +30,14 @@ App del ristorante "mangia-mangia" fusion con hamburger, pizze sushi e anche pri
 ### Struttura (da completare)
 
 - pagina home
-  - La home presenta una hero screen ed informazioni sul ristorante, con le cucine disponibili. dentro ogni cucina si puo navigare verso il menu dove vengono visualizzati i piatti di questa cucina.
-- L'utente puo' navigare dentro un menu dove vede la lista dei piatti disponibili. Abbiamo anche una tab dove possiamo filtrare per tipo di cucina. Ogni piatto puo' essere aggiunto al carrello delle ordinazioni, anche più volte. Si puo' fare un ordinazione alla volta.
-- Puoi fare un ordine, aggiungendo i piatti al carrello. dalla pagina carrello puoi confermare la tua ordinazione. quando l'ordinazione viene eseguita, l'utente viene portato verso una pagina di conferma. dalla pagina di conferma l'utente puo navigare alla home.
-- Puoi fare una prenotazione al ristorante. quando prenoti, la tua prenotazione si vede in una pagina le tue prenotazioni. una volta eseguita la prenotazione, all'utente viene mostrata una pagina di conferma della prenotazione. Dentro questa pagina si vedono le tue prenotazioni con nome, orario e giorno. la prenotazione si può disdire dalla pagina delle prenotazioni.
+  - La home presenta una hero screen ed informazioni sul ristorante, con le cucine disponibili. dentro ogni cucina si puo navigare verso il menu dove vengono visualizzati i piatti di questa cucina. Dentro la home abbiamo una sezione prenotazioni, dove si possono prenotare dei tavoli al ristorante.
+- Menu
+  - L'utente può navigare dentro un menu dove vede la lista dei piatti disponibili. Abbiamo anche una tab dove possiamo filtrare per tipo di cucina. Ogni piatto può essere aggiunto al carrello delle ordinazioni, anche più volte. Si può fare un ordinazione alla volta.
+  - Puoi fare un ordine, aggiungendo i piatti al carrello
+- Carrello
+  - Dalla pagina carrello puoi confermare la tua ordinazione. quando l'ordinazione viene eseguita, l'utente viene portato verso una pagina di conferma. dalla pagina di conferma l'utente puo navigare alla home.
+- Pagina prenotazioni
+  - la tua prenotazione si vede in una pagina le tue prenotazioni. una volta eseguita la prenotazione, all'utente viene mostrata una pagina di conferma della prenotazione. Dentro questa pagina si vedono le tue prenotazioni con nome, orario e giorno. la prenotazione si può disdire dalla pagina delle prenotazioni.
 
 ## Organizzazione tasks
 Le task vengono organizzate tramite le **issues**: le issues servono per tracciare le richieste di cose da fare. il procedimento è il seguente:
