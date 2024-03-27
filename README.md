@@ -7,6 +7,7 @@ Gruppo di riferimento:
 - Yuri Fiorito
 
 > Questo progetto è stato creato utilizzando [Create React App](https://github.com/facebook/create-react-app) e [Bootstrap](https://getbootstrap.com/).
+> il progetto utilizza un database mySQL + ExpressJS
 
 ## Cosa fare all'inizio
 
@@ -23,6 +24,19 @@ Naviga verso [http://localhost:3000](http://localhost:3000) per vederlo nel tuo 
 
 La pagina si ricaricherà ogni qual volta il codice viene modificato e salvato.
 
+## configurazione di un server mySql
+
+1. scarica mySql workbench andando alla [pagina download](https://www.mysql.com/products/workbench/)
+2. configura una nuova connessione ([pagina tutorial](https://dev.mysql.com/doc/workbench/en/wb-getting-started-tutorial-create-connection.html))
+3. scarica XAMPP ([pagina download](https://www.apachefriends.org/it/index.html))
+4. fai partire il server mySQL dalla dashboard di XAMPP
+5. entra dentro mySql workbench e esegui la query contenuta dentro `databse.sql` contenuto all'interno della repo
+
+> altre risorse:
+> [usare mySql in React](https://dev.to/nasreenkhalid/simple-react-js-and-mysql-integration-crud-app-backend-5aom)
+> [tutorial SQL](https://www.w3schools.com/sql/default.asp)
+> [sito per testare le query SQL](https://extendsclass.com/mysql-online.html)
+
 ## Descrizione
 
 App del ristorante "mangia-mangia" fusion con hamburger, pizze sushi e anche primi piatti. Il ristorante ha una sua piattaforma per la gestione degli ordini da casa online attraverso il suo sito web. Dal suo sito web e' possibile anche prenotare un tavolo e gestire le prenotazioni.
@@ -30,10 +44,14 @@ App del ristorante "mangia-mangia" fusion con hamburger, pizze sushi e anche pri
 ### Struttura (da completare)
 
 - pagina home
-  - La home presenta una hero screen ed informazioni sul ristorante, con le cucine disponibili. dentro ogni cucina si puo navigare verso il menu dove vengono visualizzati i piatti di questa cucina.
-- L'utente puo' navigare dentro un menu dove vede la lista dei piatti disponibili. Abbiamo anche una tab dove possiamo filtrare per tipo di cucina. Ogni piatto puo' essere aggiunto al carrello delle ordinazioni, anche più volte. Si puo' fare un ordinazione alla volta.
-- Puoi fare un ordine, aggiungendo i piatti al carrello. dalla pagina carrello puoi confermare la tua ordinazione. quando l'ordinazione viene eseguita, l'utente viene portato verso una pagina di conferma. dalla pagina di conferma l'utente puo navigare alla home.
-- Puoi fare una prenotazione al ristorante. quando prenoti, la tua prenotazione si vede in una pagina le tue prenotazioni. una volta eseguita la prenotazione, all'utente viene mostrata una pagina di conferma della prenotazione. Dentro questa pagina si vedono le tue prenotazioni con nome, orario e giorno. la prenotazione si può disdire dalla pagina delle prenotazioni.
+  - La home presenta una hero screen ed informazioni sul ristorante, con le cucine disponibili. dentro ogni cucina si puo navigare verso il menu dove vengono visualizzati i piatti di questa cucina. Dentro la home abbiamo una sezione prenotazioni, dove si possono prenotare dei tavoli al ristorante.
+- Menu
+  - L'utente può navigare dentro un menu dove vede la lista dei piatti disponibili. Abbiamo anche una tab dove possiamo filtrare per tipo di cucina. Ogni piatto può essere aggiunto al carrello delle ordinazioni, anche più volte. Si può fare un ordinazione alla volta.
+  - Puoi fare un ordine, aggiungendo i piatti al carrello
+- Carrello
+  - Dalla pagina carrello puoi confermare la tua ordinazione. quando l'ordinazione viene eseguita, l'utente viene portato verso una pagina di conferma. dalla pagina di conferma l'utente puo navigare alla home.
+- Pagina prenotazioni
+  - la tua prenotazione si vede in una pagina le tue prenotazioni. una volta eseguita la prenotazione, all'utente viene mostrata una pagina di conferma della prenotazione. Dentro questa pagina si vedono le tue prenotazioni con nome, orario e giorno. la prenotazione si può disdire dalla pagina delle prenotazioni.
 
 ## Organizzazione tasks
 
