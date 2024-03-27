@@ -1,4 +1,4 @@
-drop table menuRistorante;
+-- drop table menuRistorante;
 create table menuRistorante (
   id int(11) NOT NULL AUTO_INCREMENT,
   nome varchar(255),
