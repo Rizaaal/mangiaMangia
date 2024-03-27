@@ -33,6 +33,7 @@ La pagina si ricaricherà ogni qual volta il codice viene modificato e salvato.
 7. vai su Importa ed importa il file “database.sql” che si trova all’interno del progetto mangiaMangia
 8. Vai su ‘Account utenti’ e crea un nuovo utente con i seguenti parametri:\
 `Nome: mmadmin`\
+`nome host: localhost` (selezionare "Locale" dalla tendina)\
 `Password: password`
 
 > altre risorse:\
