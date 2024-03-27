@@ -1,6 +1,7 @@
 # App del ristorante mangiaMangia
 
 Gruppo di riferimento:
+
 - Gabriele Di Grazia
 - Rita Ciaramitano
 - Yuri Fiorito
@@ -35,7 +36,9 @@ App del ristorante "mangia-mangia" fusion con hamburger, pizze sushi e anche pri
 - Puoi fare una prenotazione al ristorante. quando prenoti, la tua prenotazione si vede in una pagina le tue prenotazioni. una volta eseguita la prenotazione, all'utente viene mostrata una pagina di conferma della prenotazione. Dentro questa pagina si vedono le tue prenotazioni con nome, orario e giorno. la prenotazione si può disdire dalla pagina delle prenotazioni.
 
 ## Organizzazione tasks
+
 Le task vengono organizzate tramite le **issues**: le issues servono per tracciare le richieste di cose da fare. il procedimento è il seguente:
+
 1. si decide per un cambiamento. apro una issue che descrive il cambiamento
 2. applico una label coerente
 3. dopo che la pull request è stata accettata, chiudere la issue (tasto "close issue" in fondo)
@@ -43,7 +46,9 @@ Le task vengono organizzate tramite le **issues**: le issues servono per traccia
 ## Commit standard
 
 ### Processo di push di una modifica
+
 NON è possibile pushare direttamente nel branch `main`. Per pushare una modifica:
+
 1. creare un nuovo branch
 2. committare la modifica nel branch
 3. pushare con il comando `git push origin [nome branch]`
