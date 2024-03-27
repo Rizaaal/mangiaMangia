@@ -26,15 +26,18 @@ La pagina si ricaricherà ogni qual volta il codice viene modificato e salvato.
 
 ## configurazione di un server mySql
 
-1. scarica mySql workbench andando alla [pagina download](https://www.mysql.com/products/workbench/)
-2. configura una nuova connessione ([pagina tutorial](https://dev.mysql.com/doc/workbench/en/wb-getting-started-tutorial-create-connection.html))
-3. scarica XAMPP ([pagina download](https://www.apachefriends.org/it/index.html))
-4. fai partire il server mySQL dalla dashboard di XAMPP
-5. entra dentro mySql workbench e esegui la query contenuta dentro `databse.sql` contenuto all'interno della repo
+1. scarica XAMPP ([pagina download](https://www.apachefriends.org/it/index.html))
+4. fai partire il server mySQL ed il web server apache dalla dashboard di XAMPP
+5. naviga su [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
+6. dalla dashboard, crea un nuovo database chiamato `mangiaMangiadb`
+7. vai su Importa ed importa il file “database.sql” che si trova all’interno del progetto mangiaMangia
+8. Vai su ‘Account utenti’ e crea un nuovo utente con i seguenti parametri:\
+`Nome: mmadmin`\
+`Password: password`
 
-> altre risorse:
-> [usare mySql in React](https://dev.to/nasreenkhalid/simple-react-js-and-mysql-integration-crud-app-backend-5aom)
-> [tutorial SQL](https://www.w3schools.com/sql/default.asp)
+> altre risorse:\
+> [usare mySql in React](https://dev.to/nasreenkhalid/simple-react-js-and-mysql-integration-crud-app-backend-5aom)\
+> [tutorial SQL](https://www.w3schools.com/sql/default.asp)\
 > [sito per testare le query SQL](https://extendsclass.com/mysql-online.html)
 
 ## Descrizione
