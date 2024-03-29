@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Components/Navbar';
 import Card from './Components/Card';
+import PrenotazioniComponent from './Components/Prenotazioni';
 import pippo from './cibo/pippo.jpg';
 import franco from './cibo/franco.jpg';
 import paoli from './cibo/paoli.jpg';
@@ -285,6 +286,7 @@ class App extends Component {
               ))}
           </div>
         </div>
+        <PrenotazioniComponent />
       </>
     );
   }
