@@ -50,22 +50,47 @@ const PrenotazioniComponent = () => {
         <input
           type="text"
           value={nuovaPrenotazione.nomeCliente}
-          onChange={(e) => setNuovaPrenotazione({ ...nuovaPrenotazione, nomeCliente: e.target.value })}
+          onChange={(e) =>
+            setNuovaPrenotazione({
+              ...nuovaPrenotazione,
+              nomeCliente: e.target.value
+            })
+          }
           placeholder="Nome cliente"
         />
         <input
           type="number"
           value={nuovaPrenotazione.numeroPersone}
-          onChange={(e) => setNuovaPrenotazione({ ...nuovaPrenotazione, numeroPersone: e.target.value })}
+          onChange={(e) =>
+            setNuovaPrenotazione({
+              ...nuovaPrenotazione,
+              numeroPersone: e.target.value
+            })
+          }
           placeholder="Numero persone"
         />
         <input
           type="datetime-local"
           value={nuovaPrenotazione.dataOra}
-          onChange={(e) => setNuovaPrenotazione({ ...nuovaPrenotazione, dataOra: e.target.value })}
+          onChange={(e) =>
+            setNuovaPrenotazione({
+              ...nuovaPrenotazione,
+              dataOra: e.target.value
+            })
+          }
           placeholder="Data e ora"
         />
-        <button onClick={prenotazioneModifica ? () => updatePrenotazione(prenotazioneModifica.index, nuovaPrenotazione) : createPrenotazione}>
+        <button
+          onClick={
+            prenotazioneModifica
+              ? () =>
+                  updatePrenotazione(
+                    prenotazioneModifica.index,
+                    nuovaPrenotazione
+                  )
+              : createPrenotazione
+          }
+        >
           {prenotazioneModifica ? 'Aggiorna' : 'Aggiungi Prenotazione'}
         </button>
       </div>
@@ -75,7 +100,11 @@ const PrenotazioniComponent = () => {
           <p>Nome cliente: {prenotazione.nomeCliente}</p>
           <p>Numero persone: {prenotazione.numeroPersone}</p>
           <p>Data e ora: {prenotazione.dataOra}</p>
-          <button onClick={() => setPrenotazioneModifica({ prenotazione, index })}>Modifica</button>
+          <button
+            onClick={() => setPrenotazioneModifica({ prenotazione, index })}
+          >
+            Modifica
+          </button>
           <button onClick={() => deletePrenotazione(index)}>Cancella</button>
           <hr />
         </div>
@@ -85,6 +114,3 @@ const PrenotazioniComponent = () => {
 };
 
 export default PrenotazioniComponent;
-
-
-
