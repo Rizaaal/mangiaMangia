@@ -9,11 +9,10 @@ const connection = mysql.createConnection({
   database: 'mangiaMangiadb'
 });
 
-
-connection.connect(err => {
+connection.connect((err) => {
   if (err) {
     console.log(err);
-  } else {  
+  } else {
     console.log(`database mangiaMangiadb connected`);
-  };
+  }
 });
