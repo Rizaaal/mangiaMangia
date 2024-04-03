@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Context } from './Context';
 import Navbar from './Components/Navbar';
+import PageCarrello from './Components/PageCarrello';
 import Card from './Components/Card';
 import PrenotazioniComponent from './Components/Prenotazioni';
 import pippo from './cibo/pippo.jpg';
@@ -24,6 +26,7 @@ import sprite from './cibo/sprite.jpg';
 import ceres from './cibo/ceres.jpg';
 
 class App extends Component {
+  static contextType = Context;
   state = {
     categories: [
       {
@@ -238,6 +241,7 @@ class App extends Component {
   };
 
   render() {
+    if (this.context.page === 'home'){
     return (
       <>
         <Navbar />
@@ -289,6 +293,9 @@ class App extends Component {
         <PrenotazioniComponent />
       </>
     );
+  } else {
+    return <PageCarrello />
+  }
   }
 }
 
