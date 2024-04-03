@@ -45,8 +45,8 @@ La pagina si ricaricherà ogni qual volta il codice viene modificato e salvato.
 
 App del ristorante "mangia-mangia" fusion con hamburger, pizze sushi e anche primi piatti. Il ristorante ha una sua piattaforma per la gestione degli ordini da casa online attraverso il suo sito web. Dal suo sito web e' possibile anche prenotare un tavolo e gestire le prenotazioni.
 
-### Struttura (da completare)
-
+### Struttura
+mockup (https://precursorapp.com/document/Untitled-17592211108402)
 - pagina home
   - La home presenta una hero screen ed informazioni sul ristorante, con le cucine disponibili. dentro ogni cucina si puo navigare verso il menu dove vengono visualizzati i piatti di questa cucina. Dentro la home abbiamo una sezione prenotazioni, dove si possono prenotare dei tavoli al ristorante.
 - Menu
