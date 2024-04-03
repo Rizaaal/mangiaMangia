@@ -241,7 +241,7 @@ class App extends Component {
   };
 
   render() {
-    if (this.context.page === 'home'){
+    if (this.context.page === 'home') {
     return (
       <>
         <Navbar />
@@ -294,7 +294,7 @@ class App extends Component {
       </>
     );
   } else {
-    return <PageCarrello />
+      return <PageCarrello />;
   }
   }
 }
