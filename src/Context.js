@@ -1,13 +1,18 @@
 import { createContext, useState } from 'react';
+
 export const Context = createContext({
   cart: [],
+  page: 'home',
   addToCart: () => {},
   getCart: () => {},
   updateCart: () => {},
   deleteFromCart: () => {}
 });
+
 export default function ContextProvider({ children }) {
   const [cart, setCart] = useState([]);
+  const [page, setPage] = useState('home');
+
   function addToCart(item) {
     let oldCart = JSON.parse(sessionStorage.getItem('cart')) || [];
     const newCart = [
@@ -69,6 +74,7 @@ export default function ContextProvider({ children }) {
     <Context.Provider
       value={{
         cart,
+        page,
         setCart,
         setPage,
         addToCart,
