@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import Navbar from './Navbar';
 import { Context } from '../Context';
 import Card from './Card';

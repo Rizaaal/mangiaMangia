@@ -15,7 +15,13 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">
+      <a
+        className="navbar-brand"
+        href="#"
+        onClick={() => {
+          setPage('home');
+        }}
+      >
         mangiaMangia
       </a>
       <button

@@ -5,7 +5,6 @@ class Card extends Component {
   static contextType = Context;
 
   render() {
-    
     console.log(this.props.card.img);
 
     return (
