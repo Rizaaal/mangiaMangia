@@ -4,9 +4,10 @@ export const Context = createContext({
   cart: [],
   page: 'home',
   addToCart: () => {},
-  getCart: () => {},
-  updateCart: () => {},
-  deleteFromCart: () => {}
+  deleteFromCart: () => {},
+  pay: () => {},
+  getCartTotal: () => {},
+  getNumberOfCartItems: () => {}
 });
 
 export default function ContextProvider({ children }) {
@@ -55,17 +56,41 @@ export default function ContextProvider({ children }) {
     setCart(newCart);
   }
 
+  function pay() {
+    alert('pagamento effettuato con successo.');
+    sessionStorage.setItem('cart', '[]');
+    setCart([]);
+    setPage('home');
+  }
+
+  function getCartTotal() {
+    const total = cart.reduce(
+      (total, item) => (total += item.prezzo * item.quantity),
+      0
+    );
+    return total.toFixed(2);
+  }
+
+  function getNumberOfCartItems() {
+    const numberOfCartItems = cart.reduce(
+      (number, item) => (number += 1 * item.quantity),
+      0
+    );
+    return numberOfCartItems;
+  }
+
   return (
     <Context.Provider
       value={{
         cart,
-        page,
         setCart,
+        page,
         setPage,
         addToCart,
-        getCart,
-        updateCart,
-        deleteFromCart
+        deleteFromCart,
+        pay,
+        getCartTotal,
+        getNumberOfCartItems
       }}
     >
       {children}
