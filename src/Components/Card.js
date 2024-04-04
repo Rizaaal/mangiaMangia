@@ -27,11 +27,14 @@ class Card extends Component {
           <img
             src={this.props.card.immagine}
             className="card-img-top"
-            alt="..."
+            alt="image not available"
           />
           <div className="card-body">
             <h5 className="card-title">{this.props.card.nome}</h5>
             <p className="card-text">{this.props.card.prezzo} euro</p>
+            {this.props.cart ? (
+              <p className="card-text">quantità: {this.props.card.quantity}</p>
+            ) : null}
           </div>
         </div>
       </div>
