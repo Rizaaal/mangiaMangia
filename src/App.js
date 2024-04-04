@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Context } from './Context';
 import Navbar from './Components/Navbar';
-import PageCarrello from './Components/PageCarrello';
-import Card from './Components/Card';
 import PrenotazioniComponent from './Components/Prenotazioni';
+import Card from './Components/Card';
+
 import pippo from './cibo/pippo.jpg';
 import franco from './cibo/franco.jpg';
 import paoli from './cibo/paoli.jpg';
@@ -26,7 +25,6 @@ import sprite from './cibo/sprite.jpg';
 import ceres from './cibo/ceres.jpg';
 
 class App extends Component {
-  static contextType = Context;
   state = {
     categories: [
       {
@@ -188,24 +186,12 @@ class App extends Component {
         ]
       }
     ],
-    selectedCategory: null
+    selectedCategory: null,
+    totalQuantity: 0
   };
 
   handleCategoryClick = (categoryId) => {
     this.setState({ selectedCategory: categoryId });
-  };
-
-  handleDelete = (categoryId, cardId) => {
-    const updatedCategories = this.state.categories.map((category) => {
-      if (category.id === categoryId) {
-        category.products = category.products.filter(
-          (product) => product.id !== cardId
-        );
-      }
-      return category;
-    });
-
-    this.setState({ categories: updatedCategories });
   };
 
   handleIncrement = (categoryId, card) => {
@@ -221,7 +207,11 @@ class App extends Component {
       return category;
     });
 
-    this.setState({ categories: updatedCategories });
+    const updatedTotalQuantity = this.state.totalQuantity + 1;
+    this.setState({
+      categories: updatedCategories,
+      totalQuantity: updatedTotalQuantity
+    });
   };
 
   handleDecrement = (categoryId, card) => {
@@ -237,11 +227,15 @@ class App extends Component {
       return category;
     });
 
-    this.setState({ categories: updatedCategories });
+    const updatedTotalQuantity =
+      this.state.totalQuantity > 0 ? this.state.totalQuantity - 1 : 0;
+    this.setState({
+      categories: updatedCategories,
+      totalQuantity: updatedTotalQuantity
+    });
   };
 
   render() {
-    if (this.context.page === 'home') {
     return (
       <>
         <Navbar />
@@ -272,30 +266,48 @@ class App extends Component {
                   <h2>{category.name}</h2>
                   <hr />
                   {category.products.map((product) => (
-                    <Card
+                    <div
+                      className="card"
+                      style={{ width: '18rem' }}
                       key={product.id}
-                      card={product}
-                      onDelete={() =>
-                        this.handleDelete(category.id, product.id)
-                      }
-                      onIncrement={() =>
-                        this.handleIncrement(category.id, product)
-                      }
-                      onDecrement={() =>
-                        this.handleDecrement(category.id, product)
-                      }
-                    />
+                    >
+                      <img
+                        src={product.immagine}
+                        className="card-img-top"
+                        alt={product.nome}
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">{product.nome}</h5>
+                        <p className="card-text">Prezzo: ${product.prezzo}</p>
+                        <div className="btn-group" role="group">
+                          <button
+                            className="btn btn-primary"
+                            onClick={() =>
+                              this.handleDecrement(category.id, product)
+                            }
+                          >
+                            -1
+                          </button>
+                          <span>{product.quantità}</span>
+                          <button
+                            className="btn btn-primary"
+                            onClick={() =>
+                              this.handleIncrement(category.id, product)
+                            }
+                          >
+                            +1
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   ))}
                 </div>
               ))}
           </div>
         </div>
-        <PrenotazioniComponent />
+        <PrenotazioniComponent totalQuantity={this.state.totalQuantity} />
       </>
     );
-  } else {
-      return <PageCarrello />;
-  }
   }
 }
 
