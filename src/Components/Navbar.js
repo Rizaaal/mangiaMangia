@@ -5,12 +5,12 @@ function Navbar() {
   const { setPage } = useContext(Context);
 
   return (
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a className="navbar-brand" href="#">
         mangiaMangia
       </a>
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -18,13 +18,13 @@ function Navbar() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+          <li className="nav-item active">
             <a
-              class="nav-link"
+              className="nav-link"
               href="#"
               onClick={() => {
                 setPage('home');
@@ -33,9 +33,9 @@ function Navbar() {
               Home
             </a>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <a
-              class="nav-link"
+              className="nav-link"
               href="#"
               onClick={() => {
                 setPage('carrello');
