@@ -7,7 +7,6 @@ body {
   padding: 0;
 }
 
-
 .navbar {
   background-color: #22223b;
   color: #f2e9e4;
@@ -27,12 +26,10 @@ body {
   background-color: #4a4e69;
 }
 
-
 h1 {
   text-align: center;
   color: #22223b;
 }
-
 
 .btn-group {
   display: flex;
@@ -52,7 +49,6 @@ h1 {
 .btn-group button:hover {
   background-color: #c9ada7;
 }
-
 
 .card {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -88,7 +84,6 @@ h1 {
 .card .btn:hover {
   background-color: #4a4e69;
 }
-
 
 .footer {
   background-color: #22223b;
