@@ -5,6 +5,9 @@ class Card extends Component {
   static contextType = Context;
 
   render() {
+    
+    console.log(this.props.card.img);
+
     return (
       <div className="col">
         <div className="card" style={{ width: '20rem', textAlign: 'center' }}>
@@ -25,7 +28,7 @@ class Card extends Component {
             -1
           </button>
           <img
-            src={this.props.card.immagine}
+            src={this.props.card.img}
             className="card-img-top"
             alt="image not available"
           />
