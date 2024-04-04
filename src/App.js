@@ -5,7 +5,7 @@ import Card from './Components/Card';
 import PageCarrello from './Components/PageCarrello';
 import PrenotazioniComponent from './Components/Prenotazioni';
 import { Context } from './Context';
-import LandingPage from './LandingPage'; 
+import LandingPage from './LandingPage';
 
 function App() {
   const [products, setProducts] = useState([]);
