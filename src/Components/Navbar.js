@@ -2,7 +2,16 @@ import { useContext } from 'react';
 import { Context } from '../Context';
 
 function Navbar() {
-  const { setPage } = useContext(Context);
+  const { setPage, getNumberOfCartItems } = useContext(Context);
+
+  const CartCounterStyle = {
+    backgroundColor: 'red',
+    marginLeft: 10,
+    padding: 5,
+    borderRadius: 100
+  };
+
+  const numberOfCartItems = getNumberOfCartItems();
 
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -42,6 +51,9 @@ function Navbar() {
               }}
             >
               Carrello
+              {numberOfCartItems > 0 ? (
+                <span style={CartCounterStyle}>{getNumberOfCartItems()}</span>
+              ) : null}
             </a>
           </li>
         </ul>
