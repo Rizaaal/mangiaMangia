@@ -33,6 +33,14 @@ function App() {
       <div>
         <Navbar />
         <div className="btn-group" role="group" aria-label="Categorie">
+          <button
+            key={'all'}
+            type="button"
+            className="btn btn-primary"
+            onClick={() => setSelected('all')}
+          >
+            all
+          </button>
           {Array.from(new Set(products.map((product) => product.sezione))).map(
             (sezione) => (
               <button
