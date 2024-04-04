@@ -1,10 +1,13 @@
 import React from 'react';
+import './App.css';
+import HeroScreen from './Components/HeroScreen'; 
 
 function LandingPage({ setLandingPageVisible }) {
   return (
-    <div>
-      <h1>Benvenuto nel nostro ristorante!</h1>
-      <button onClick={() => setLandingPageVisible(false)}>
+    <div className="landing-page">
+      <HeroScreen /> 
+      <hr></hr>
+      <button className="hero-btn" onClick={() => setLandingPageVisible(false)}>
         Entra nel sito
       </button>
     </div>
@@ -12,3 +15,5 @@ function LandingPage({ setLandingPageVisible }) {
 }
 
 export default LandingPage;
+
+
