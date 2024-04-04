@@ -1,4 +1,4 @@
-// HeroScreen.js
+// heroScreen.js
 import React from 'react';
 import './HeroScreen.css';
 
