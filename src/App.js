@@ -28,11 +28,6 @@ function App() {
     ? products
     : products.filter((product) => product.sezione === selected);
 
-  
-  
-
- 
-
   if (page === 'home') {
     return (
       <div>
@@ -68,7 +63,6 @@ function App() {
       </div>
     );
   }
-  
   return <div>Seleziona</div>;
 }
 
