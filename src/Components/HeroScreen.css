@@ -1,23 +1,27 @@
 .hero {
-    background-image: url('./logo/logo.png');
-    background-color: black; /* Sfondo nero */
-    height: 100vh;
-    background-size: 50%; /* Imposta la dimensione del logo */
-    background-repeat: no-repeat;
-    background-position: center; /* Centra il logo */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Sposta il contenuto verso il basso */
-    align-items: flex-start; /* Allinea il contenuto a sinistra */
-    text-align: left; /* Allinea il testo a sinistra */
-    color: #fff; /* Testo bianco per una migliore visibilità */
-    padding: 20px; /* Aggiunge spazio intorno al contenuto */
-  }
-  
-  /* Aggiungi una classe per il testo che deve essere visibile */
-  .visible-text {
-    background: rgba(255, 255, 255, 0.7); /* Sfondo semi-trasparente per il testo */
-    padding: 0.5em; /* Spaziatura intorno al testo */
-    border-radius: 5px; /* Angoli arrotondati per lo sfondo del testo */
-  }
-  
+  background-image: url('./logo/logo.png');
+  background-color: black; /* Sfondo nero */
+  height: 100vh;
+  background-size: 50%; /* Imposta la dimensione del logo */
+  background-repeat: no-repeat;
+  background-position: center; /* Centra il logo */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Sposta il contenuto verso il basso */
+  align-items: flex-start; /* Allinea il contenuto a sinistra */
+  text-align: left; /* Allinea il testo a sinistra */
+  color: #fff; /* Testo bianco per una migliore visibilità */
+  padding: 20px; /* Aggiunge spazio intorno al contenuto */
+}
+
+/* Aggiungi una classe per il testo che deve essere visibile */
+.visible-text {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Sfondo semi-trasparente per il testo */
+  padding: 0.5em; /* Spaziatura intorno al testo */
+  border-radius: 5px; /* Angoli arrotondati per lo sfondo del testo */
+}

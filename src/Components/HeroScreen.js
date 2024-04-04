@@ -1,15 +1,9 @@
 // HeroScreen.js
 import React from 'react';
-import './HeroScreen.css'; 
+import './HeroScreen.css';
 
 function HeroScreen() {
-  return (
-    <div className="hero">
-      
-      
-     
-    </div>
-  );
+  return <div className="hero"></div>;
 }
 
 export default HeroScreen;

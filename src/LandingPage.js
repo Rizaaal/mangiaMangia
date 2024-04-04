@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import HeroScreen from './Components/HeroScreen'; 
+import HeroScreen from './Components/HeroScreen';
 
 function LandingPage({ setLandingPageVisible }) {
   return (
     <div className="landing-page">
-      <HeroScreen /> 
+      <HeroScreen />
       <hr></hr>
       <button className="hero-btn" onClick={() => setLandingPageVisible(false)}>
         Entra nel sito
@@ -15,5 +15,3 @@ function LandingPage({ setLandingPageVisible }) {
 }
 
 export default LandingPage;
-
-
