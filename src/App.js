@@ -242,60 +242,60 @@ class App extends Component {
 
   render() {
     if (this.context.page === 'home') {
-    return (
-      <>
-        <Navbar />
-        <h1>Cosa desideri ordinare?</h1>
-        <hr />
-        <div className="container">
-          <div className="btn-group" role="group" aria-label="Categorie">
-            {this.state.categories.map((category) => (
-              <button
-                key={category.id}
-                type="button"
-                className="btn btn-primary"
-                onClick={() => this.handleCategoryClick(category.id)}
-              >
-                {category.name}
-              </button>
-            ))}
-          </div>
-          <div className="row">
-            {this.state.categories
-              .filter(
-                (category) =>
-                  this.state.selectedCategory === null ||
-                  category.id === this.state.selectedCategory
-              )
-              .map((category) => (
-                <div key={category.id}>
-                  <h2>{category.name}</h2>
-                  <hr />
-                  {category.products.map((product) => (
-                    <Card
-                      key={product.id}
-                      card={product}
-                      onDelete={() =>
-                        this.handleDelete(category.id, product.id)
-                      }
-                      onIncrement={() =>
-                        this.handleIncrement(category.id, product)
-                      }
-                      onDecrement={() =>
-                        this.handleDecrement(category.id, product)
-                      }
-                    />
-                  ))}
-                </div>
+      return (
+        <>
+          <Navbar />
+          <h1>Cosa desideri ordinare?</h1>
+          <hr />
+          <div className="container">
+            <div className="btn-group" role="group" aria-label="Categorie">
+              {this.state.categories.map((category) => (
+                <button
+                  key={category.id}
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={() => this.handleCategoryClick(category.id)}
+                >
+                  {category.name}
+                </button>
               ))}
+            </div>
+            <div className="row">
+              {this.state.categories
+                .filter(
+                  (category) =>
+                    this.state.selectedCategory === null ||
+                    category.id === this.state.selectedCategory
+                )
+                .map((category) => (
+                  <div key={category.id}>
+                    <h2>{category.name}</h2>
+                    <hr />
+                    {category.products.map((product) => (
+                      <Card
+                        key={product.id}
+                        card={product}
+                        onDelete={() =>
+                          this.handleDelete(category.id, product.id)
+                        }
+                        onIncrement={() =>
+                          this.handleIncrement(category.id, product)
+                        }
+                        onDecrement={() =>
+                          this.handleDecrement(category.id, product)
+                        }
+                      />
+                    ))}
+                  </div>
+                ))}
+            </div>
           </div>
-        </div>
-        <PrenotazioniComponent />
-      </>
-    );
-  } else {
+          <PrenotazioniComponent />
+        </>
+      );
+    } else {
       return <PageCarrello />;
-  }
+    }
   }
 }
 
