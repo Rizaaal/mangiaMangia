@@ -10,7 +10,9 @@ export const Context = createContext({
 });
 
 export default function ContextProvider({ children }) {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(
+    JSON.parse(sessionStorage.getItem('cart')) || []
+  );
   const [page, setPage] = useState('home');
 
   function addToCart(item) {
