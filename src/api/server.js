@@ -1,6 +1,7 @@
 // npm install mysql2
 const mysql = require('mysql2');
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = 3001;
 
@@ -19,6 +20,8 @@ connection.connect((err) => {
     console.log(`database mangiaMangiadb connected`);
   }
 });
+
+app.use(cors());
 
 app.get('/api/menu', (req, res) => {
   const menu = connection.query(
