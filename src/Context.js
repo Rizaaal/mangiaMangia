@@ -17,7 +17,7 @@ export default function ContextProvider({ children }) {
   const [page, setPage] = useState('home');
 
   function addToCart(item) {
-    let newCart = [...JSON.parse(sessionStorage.getItem('cart'))] || [];
+    let newCart = [...(JSON.parse(sessionStorage.getItem('cart')) || [])];
     let foundIndex = newCart.findIndex((e) => e.id === item.id);
 
     if (foundIndex === -1) {
