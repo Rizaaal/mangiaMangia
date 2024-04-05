@@ -31,9 +31,7 @@ const Card = ({ card, cart }) => {
         <div className="card-body">
           <h5 className="card-title">{card.nome}</h5>
           <p className="card-text">{card.prezzo} euro</p>
-          {cart ? (
-            <p className="card-text">quantità: {card.quantity}</p>
-          ) : null}
+          {cart ? <p className="card-text">quantità: {card.quantity}</p> : null}
         </div>
       </div>
     </div>
@@ -41,4 +39,3 @@ const Card = ({ card, cart }) => {
 };
 
 export default Card;
-
